@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      <meta name="theme-color" content="#2d7a3a" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="apple-mobile-web-app-title" content="Hand to Hand" />
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.lordicon.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://tile.openstreetmap.org https://*.tile.openstreetmap.de https://server.arcgisonline.com https://storage.googleapis.com; connect-src 'self' https://*.supabase.co https://api.open-meteo.com https://nominatim.openstreetmap.org wss://*.supabase.co; media-src 'self' blob: https://*.supabase.co; worker-src 'self' blob:;" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/h2h-favicon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <title>Hand To Hand – Buy &amp; Sell Second Hand Items Locally</title>
+      <meta name="description" content="Buy and sell second hand items locally on Hand To Hand. List used furniture, clothes, electronics
+  and more in seconds. Free local marketplace for resale near you.">
+      <meta name="keywords" content="buy second hand, sell used items, local resale, secondhand marketplace, used goods near me, resale app,
+   local buy sell, neighborhood marketplace" />
+      <meta name="author" content="Hand To Hand" />
+      <meta name="robots" content="index, follow" />
+
+      <link rel="preconnect" href="https://api.open-meteo.com" crossorigin />
+      <link rel="preconnect" href="https://nominatim.openstreetmap.org" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin />
+      <!-- Only load fonts actually used in the design system, deferred to avoid render-blocking -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" media="print"
+   onload="this.media='all'" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" media="print"
+   onload="this.media='all'" />
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" />
+      </noscript>
+
+      <link rel="icon" type="image/png" href="/h2h-favicon.png" />
+      <!-- Preload critical hero image -->
+      <link rel="preload" as="image" href="/h2h-logo-new.jpg" />
+      <!-- TODO: Manually compress h2h-logo.png from 1.3MB to <100KB using TinyPNG.com or Squoosh.app -->
+
+      <link rel="canonical" href="https://handtohandresale.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Hand To Hand Resale" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:site" content="@handtohandresale" />
+      <meta name="twitter:creator" content="@handtohandresale" />
+      <meta property="og:url" content="https://handtohandresale.com" />
+      <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8c25bccc-9635-49dc-982a-b80772cc71d6?Expires=1773023576&amp;GoogleAccessId=go-api-on-aws%40gpt-engineer-390607.iam.gserviceaccount.com&amp;Signature=wTi%2BAgOL6yMVu0DX9u03HeiUpat15bdOeEg5YgRnm9wOTdzxdivdU1pXOeIsHNMAat70%2Fftwxo8%2FyUXsjTTx8kU264cvqAL8yTttoGNLPJpESIFigiRuarxI0llV8pv1WvWa9H0vQdzGsu2g8O2vp9830%2Fm3aT6X4i8Eh%2FpELLxx4Y2%2FY8R2NZGfuQcxv7qZwUBdypNSkCs8%2F%2Bp2j005OpRjsvhrNoTRQT4qW7dsOeJnOg3qmH7MFUGPjQPbE8lA4VWkv%2FY58YBUqJXlayFSrFrbWndhY3OagYw54%2BhBpaJipccpVFxueBm4AWoGrmMvzvdOk6Jii%2Fw7SGQu%2BAguEQ%3D%3D">
+
+      <meta name="twitter:card" content="summary_large_image" />
+      
+      
+      <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/8c25bccc-9635-49dc-982a-b80772cc71d6?Expires=1773023576&amp;GoogleAccessId=go-api-on-aws%40gpt-engineer-390607.iam.gserviceaccount.com&amp;Signature=wTi%2BAgOL6yMVu0DX9u03HeiUpat15bdOeEg5YgRnm9wOTdzxdivdU1pXOeIsHNMAat70%2Fftwxo8%2FyUXsjTTx8kU264cvqAL8yTttoGNLPJpESIFigiRuarxI0llV8pv1WvWa9H0vQdzGsu2g8O2vp9830%2Fm3aT6X4i8Eh%2FpELLxx4Y2%2FY8R2NZGfuQcxv7qZwUBdypNSkCs8%2F%2Bp2j005OpRjsvhrNoTRQT4qW7dsOeJnOg3qmH7MFUGPjQPbE8lA4VWkv%2FY58YBUqJXlayFSrFrbWndhY3OagYw54%2BhBpaJipccpVFxueBm4AWoGrmMvzvdOk6Jii%2Fw7SGQu%2BAguEQ%3D%3D">
+      <meta property="og:title" content="Hand To Hand – Buy &amp; Sell Second Hand Items Locally">
+  <meta name="twitter:title" content="Hand To Hand – Buy &amp; Sell Second Hand Items Locally">
+  <meta property="og:description" content="Buy and sell second hand items locally on Hand To Hand. List used furniture, clothes, electronics
+  and more in seconds. Free local marketplace for resale near you.">
+  <meta name="twitter:description" content="Buy and sell second hand items locally on Hand To Hand. List used furniture, clothes, electronics
+  and more in seconds. Free local marketplace for resale near you.">
+</head>
+
+  <body>
+    <div id="root">
+      <!-- Inline skeleton for faster FCP -->
+      <div style="min-height:100vh;background:#f7f9f5;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'DM Sans',system-ui,sans-serif">
+        <img src="/h2h-logo-new.jpg" alt="H2H Resale" width="48" height="48" style="margin-bottom:12px;border-radius:12px" />
+        <div style="width:120px;height:4px;border-radius:2px;background:#e0dce2;overflow:hidden">
+          <div style="width:40%;height:100%;background:#2d7a3a;border-radius:2px;animation:fcp-load 1s ease-in-out infinite alternate"></div>
+        </div>
+      </div>
+      <style>@keyframes fcp-load{from{transform:translateX(-20px)}to{transform:translateX(80px)}}</style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </body>
+</html>
